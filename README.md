@@ -93,7 +93,7 @@ Send the session cookie to destroy the session and clear the cookie.
 
 ## Sessions
 
-Sessions are stored in PostgreSQL rather than in application memory. The session cookie is HTTP-only, uses `SameSite=Strict`, and is marked secure when `NODE_ENV=production`. Its lifetime is 20 seconds and is refreshed while the session is active.
+Sessions are stored in PostgreSQL rather than in application memory. The session cookie is HTTP-only, uses `SameSite=Strict`, and is marked secure when `NODE_ENV=production`. Its lifetime is 10 minutes and is refreshed while the session is active.
 
 ## Project structure
 
